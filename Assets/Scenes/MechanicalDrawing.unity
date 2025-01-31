@@ -281,7 +281,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 580de392c9a82d743a9a98a640ed105e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.53, y: 3.4}
@@ -384,6 +384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384596031}
   - component: {fileID: 384596030}
+  - component: {fileID: 384596032}
   m_Layer: 0
   m_Name: silvBig
   m_TagString: Untagged
@@ -458,6 +459,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384596032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384596029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.25
 --- !u!1 &543086346
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 785789694}
   - component: {fileID: 785789693}
+  - component: {fileID: 785789695}
   m_Layer: 0
   m_Name: Crankshaft
   m_TagString: Untagged
@@ -965,8 +983,25 @@ Transform:
   - {fileID: 772553903}
   - {fileID: 1327157317}
   - {fileID: 108982979}
+  - {fileID: 1378900007}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &785789695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785789692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.5
 --- !u!1 &791431663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,7 +1416,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 580de392c9a82d743a9a98a640ed105e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.53, y: 3.4}
@@ -1832,6 +1867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1364188017}
   - component: {fileID: 1364188016}
+  - component: {fileID: 1364188018}
   m_Layer: 0
   m_Name: DolphinCog
   m_TagString: Untagged
@@ -1910,6 +1946,22 @@ Transform:
   - {fileID: 598448386}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364188018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364188015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.5
 --- !u!1 &1378900005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,12 +2039,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378900005}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: -4.36, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.16666667, z: 0}
+  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 785789694}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1382269717
 GameObject:
@@ -2341,6 +2393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1506465512}
   - component: {fileID: 1506465511}
+  - component: {fileID: 1506465513}
   m_Layer: 0
   m_Name: silvBig (1)
   m_TagString: Untagged
@@ -2415,6 +2468,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1506465513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506465510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.25
 --- !u!1 &1591181493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,6 +2494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591181495}
   - component: {fileID: 1591181494}
+  - component: {fileID: 1591181496}
   m_Layer: 0
   m_Name: GoldSmall
   m_TagString: Untagged
@@ -2499,6 +2569,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1591181496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591181493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.5
 --- !u!1 &1604831771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,6 +2595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1604831773}
   - component: {fileID: 1604831772}
+  - component: {fileID: 1604831774}
   m_Layer: 0
   m_Name: GoldBig
   m_TagString: Untagged
@@ -2583,6 +2670,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604831774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604831771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60854cf77e1afa47aca28d125044b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  rotationAcceleration: 0
+  rotationDirection: 0
+  maxSpeed: 0.1
 --- !u!1 &1758489262
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,7 +2778,6 @@ SceneRoots:
   - {fileID: 1452380122}
   - {fileID: 1054869051}
   - {fileID: 1364188017}
-  - {fileID: 1378900007}
   - {fileID: 1591181495}
   - {fileID: 993066105}
   - {fileID: 1263470513}
