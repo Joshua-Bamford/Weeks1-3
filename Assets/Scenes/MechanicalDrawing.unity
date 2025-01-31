@@ -278,7 +278,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 580de392c9a82d743a9a98a640ed105e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -316,7 +316,7 @@ Transform:
   m_GameObject: {fileID: 370702338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.7267785, y: 0, z: 0}
+  m_LocalPosition: {x: 5.54, y: 0, z: 0}
   m_LocalScale: {x: 1.1385245, y: 0.57212293, z: 1.2523772}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -362,7 +362,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5299628c20f3a8345b7df630d393e925, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -585,7 +585,7 @@ Transform:
   m_GameObject: {fileID: 598448385}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.658467, y: 0, z: 0}
+  m_LocalPosition: {x: -5.53, y: 0, z: 0}
   m_LocalScale: {x: 1.1385245, y: 0.57212293, z: 1.2523772}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -631,7 +631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5299628c20f3a8345b7df630d393e925, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1413,7 +1413,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 580de392c9a82d743a9a98a640ed105e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -1435,6 +1435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054869051}
   - component: {fileID: 1054869050}
+  - component: {fileID: 1054869052}
   m_Layer: 0
   m_Name: wood pole
   m_TagString: Untagged
@@ -1482,7 +1483,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5299628c20f3a8345b7df630d393e925, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1510,6 +1511,55 @@ Transform:
   - {fileID: 745069229}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054869052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054869049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b6be1a40d25f45a1d30a22c9487eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roughWaters:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.44611937
+      value: 0.95825684
+      inSlope: 1.4999988
+      outSlope: 1.4999988
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  t: 0
+  tideStart: {x: 4.93, y: -2}
+  tideEnd: {x: 4.93, y: 0}
+  waveSpeed: 0.18
 --- !u!1 &1087088203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,6 +2106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382269719}
   - component: {fileID: 1382269718}
+  - component: {fileID: 1382269720}
   m_Layer: 0
   m_Name: WaveSurface
   m_TagString: Untagged
@@ -2124,13 +2175,62 @@ Transform:
   m_GameObject: {fileID: 1382269717}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8, y: -3.55, z: 0}
+  m_LocalPosition: {x: -3.8, y: -1.53, z: 0}
   m_LocalScale: {x: 0.81, y: 0.81, z: 0.81}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1417818614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382269720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382269717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b6be1a40d25f45a1d30a22c9487eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roughWaters:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.44611937
+      value: 0.95825684
+      inSlope: 1.4999988
+      outSlope: 1.4999988
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  t: 0
+  tideStart: {x: -3.8, y: -4.05}
+  tideEnd: {x: -3.8, y: -1.53}
+  waveSpeed: 0.2
 --- !u!1 &1417818613
 GameObject:
   m_ObjectHideFlags: 0
